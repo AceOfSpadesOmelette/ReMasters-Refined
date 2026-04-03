@@ -1,0 +1,15 @@
+﻿syntax = "proto3";
+package ReMastersLib;
+
+message BattleRallyShop {
+  int64 battle_rally_shop_id = 1;
+  string battle_rally_shop_item_condition_id = 2; // BattleRallyShopItemCondition.pb
+  repeated uint32 floors = 3;
+  uint32 item_position = 4;
+  int64 u1 = 5;
+  int64 u2 = 6;
+}
+
+message BattleRallyShopTable {
+  repeated BattleRallyShop entries = 1;
+}

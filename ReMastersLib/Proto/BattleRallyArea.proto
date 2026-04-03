@@ -1,0 +1,16 @@
+﻿syntax = "proto3";
+package ReMastersLib;
+
+message BattleRallyArea {
+  uint64 battle_rally_area_id = 1;
+  int64 floor = 2;
+  int64 difficulty = 3; // 1 = easy, 2 = hard, 3 = very hard, 9 = lucky
+  uint64 multiple_parameter_boost_id = 4; // MultipleParameterBoost.pb
+  int64 rally_points_qty = 5;
+  int64 u2 = 6;   // BattleRallyId ?
+  int64 u3 = 7;   // BattleRallyId ?
+}
+
+message BattleRallyAreaTable {
+  repeated BattleRallyArea entries = 1;
+}

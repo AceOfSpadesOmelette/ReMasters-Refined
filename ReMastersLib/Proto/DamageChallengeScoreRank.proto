@@ -1,0 +1,16 @@
+﻿syntax = "proto3";
+
+package ReMastersLib;
+
+message DamageChallengeScoreRank {
+  int64 damage_challenge_ranking_id = 1;  // DamageChallengeRanking.pb
+  int32 better_than = 2;
+  string medal_img_name = 3;
+  int64 score_rank_id = 4;  // damage_challenge_score_rank_xx.lsd
+  int32 u1 = 5;
+  int32 medal_category = 6;
+}
+
+message DamageChallengeScoreRankTable {
+  repeated DamageChallengeScoreRank entries = 1;
+}

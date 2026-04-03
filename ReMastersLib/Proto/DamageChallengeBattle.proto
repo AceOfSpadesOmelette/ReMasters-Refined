@@ -1,0 +1,16 @@
+﻿syntax = "proto3";
+
+package ReMastersLib;
+
+message DamageChallengeBattle {
+  int64 damage_challenge_battle_id = 1;
+  int64 u1 = 2;
+  int64 quest_group_id = 3;  // EventQuestGroup.pb
+  int64 u2 = 4;
+  int32 battle_duration = 5;
+  int64 damage_challenge_ranking_id = 6;
+}
+
+message DamageChallengeBattleTable {
+  repeated DamageChallengeBattle entries = 1;
+}

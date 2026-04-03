@@ -1,0 +1,18 @@
+﻿syntax = "proto3";
+package ReMastersLib;
+
+message BattleRallyShopItemCondition {
+  string battle_rally_shop_item_condition_id = 1; // Item.pb
+
+  // 1: BattleRallyItem.pb
+  // 2: item categories (global)
+  // 3: item categories (specific rally)
+  // 4: item categories (???)
+  // 5: Item 76000004 OR categories if item 76000005 has been bought
+  int32 condition = 2;
+  repeated int32 value = 3;
+}
+
+message BattleRallyShopItemConditionTable {
+  repeated BattleRallyShopItemCondition entries = 1;
+}

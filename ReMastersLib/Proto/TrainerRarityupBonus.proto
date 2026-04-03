@@ -1,0 +1,13 @@
+﻿syntax = "proto3";
+package ReMastersLib;
+
+message TrainerRarityupBonus {
+  uint64 trainer_rarityup_bonus_id = 1;
+  uint64 trainer_id = 2;  // Trainer.pb
+  uint64 item_set_id = 3;   // ItemSet.pb
+  string schedule_id = 4; // Schedule.pb
+}
+
+message TrainerRarityupBonusTable {
+  repeated TrainerRarityupBonus entries = 1;
+}

@@ -1,0 +1,25 @@
+syntax = "proto3";
+package ReMastersLib;
+
+message ShopPurchasableItem {
+	uint64 shop_purchasable_id = 1;
+	int64 u1 = 2;
+	int64 u2 = 3;
+	int64 u3 = 4;
+	string internal_name = 5;
+	uint64 u4 = 6;
+	uint64 item_set_id_1 = 7;	// ItemSet.pb
+	uint64 item_set_id_2 = 8;	// ItemSet.pb
+	uint64 paid_vc_name = 9;		// paid_virtual_currency_xx.lsd
+	uint64 limit = 10;
+	string scheduleId = 11;	// Schedule.pb
+	string itemPack = 12;
+	int64 paid_vc_with_bonus_name = 13;	// paid_virtual_currency_with_login_bonus_xx.lsd
+	int64 banner_id = 14;	// Banner.pb
+	string u5 = 15;
+	string u6 = 17;
+}
+
+message ShopPurchasableItemTable {
+	repeated ShopPurchasableItem entries = 1;
+}

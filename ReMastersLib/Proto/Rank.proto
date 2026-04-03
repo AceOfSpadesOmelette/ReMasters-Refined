@@ -1,0 +1,13 @@
+﻿syntax = "proto3";
+
+package ReMastersLib;
+
+message Rank {
+  uint32 rank = 1;    
+  uint64 exp_needed = 2;
+  uint32 max_stamina = 3;
+}
+
+message RankTable {
+  repeated Rank entries = 1;
+}

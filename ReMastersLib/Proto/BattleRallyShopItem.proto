@@ -1,0 +1,20 @@
+﻿syntax = "proto3";
+package ReMastersLib;
+
+message BattleRallyShopItem {
+  uint64 battle_rally_item_id = 1;
+  int64 item_id = 2;  // Item.pb
+  int64 price = 3;
+  int64 max_exchanges_at_once = 4;
+  int64 max_exchanges = 5;
+  bool can_restock = 6;
+  int64 u1 = 7;   // Always 100
+  int64 sale_reduction_percentage = 8;  // Always 50
+  int64 u2 = 9;   // Always 100
+  int64 u3 = 10;  // Always 100
+
+}
+
+message BattleRallyShopItemTable {
+  repeated BattleRallyShopItem entries = 1;
+}

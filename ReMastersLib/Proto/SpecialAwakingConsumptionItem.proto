@@ -1,0 +1,15 @@
+﻿syntax = "proto3";
+
+package ReMastersLib;
+
+message SpecialAwakingConsumptionItem {
+  int32 special_awaking_consumption_item_id = 1;
+  int32 level = 2;
+  int32 num_superawakening_candies = 3;
+  int32 num_tomes = 4;
+  int32 num_codices = 5;
+}
+
+message SpecialAwakingConsumptionItemTable {
+  repeated SpecialAwakingConsumptionItem entries = 1;
+}

@@ -1,0 +1,29 @@
+﻿syntax = "proto3";
+
+package ReMastersLib;
+
+message SalonGuest {
+  uint32 salonGuestId = 1;
+  int64 trainerId = 2;   // Trainer.pb
+  string interactScriptPath = 3;
+  int32 u4 = 4;
+  int64 storyQuestId = 5;
+  uint64 u6 = 6;
+  string u7 = 7;
+  string scheduleId = 8;    // Schedule.pb
+  int64 u9 = 9;
+  int32 u10 = 10;
+  int32 u11 = 11;
+  int64 u12 = 12;
+  int64 u13 = 13;
+  int64 u14 = 14;
+  int64 u15 = 15;
+  int64 u16 = 16;
+  int64 u17 = 17;
+  int64 u18 = 18;
+  string u19 = 19;
+}
+
+message SalonGuestTable {
+  repeated SalonGuest entries = 1;
+}

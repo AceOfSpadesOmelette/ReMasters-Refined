@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+package ReMastersLib;
+
+message AbilityPanel {
+	int32 cell_id = 1;
+	int32 version = 2;
+	int64 trainer_id = 3;				// Trainer.pb
+	int32 energy_cost = 4;
+	int32 orb_cost = 5;
+	
+	// Hex grid coordinates
+	int32 x = 6;
+	int32 y = 7;
+	int32 z = 8;
+
+	int64 ability_id = 9;				// Ability.pb
+	repeated int32 condition_ids = 10;	// AbilityReleaseCondition.pb
+	string schedule_id = 11;			// Schedule.pb
+}
+
+message AbilityPanelTable {
+	repeated AbilityPanel entries = 1;
+}

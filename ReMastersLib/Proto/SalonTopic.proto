@@ -1,0 +1,14 @@
+﻿syntax = "proto3";
+
+package ReMastersLib;
+
+message SalonTopic {
+  uint32 salon_topic_id = 1;
+  int32 u1 = 2;
+  int32 salon_topic_category_id = 3;  // salon_topic_category_xx.lsd / SalonTopicCategory.pb
+  string salon_topic_name = 4;  // salon_topic_name_xx.lsd
+}
+
+message SalonTopicTable {
+  repeated SalonTopic entries = 1;
+}

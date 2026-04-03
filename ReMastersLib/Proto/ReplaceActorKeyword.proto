@@ -1,0 +1,15 @@
+﻿syntax = "proto3";
+
+package ReMastersLib;
+
+message ReplaceActorKeyword {
+  string replacedActorId = 1;
+  string replacingActorId = 2;
+  bool useGenericIfAvailable = 3;
+  int32 u4 = 4;
+  int32 u5 = 5;
+}
+
+message ReplaceActorKeywordTable {
+  repeated ReplaceActorKeyword entries = 1;
+}

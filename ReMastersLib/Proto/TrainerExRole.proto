@@ -1,0 +1,14 @@
+﻿syntax = "proto3";
+
+package ReMastersLib;
+
+message TrainerExRole {
+    int64 trainer_id = 1; // Trainer.pb
+    int32 role = 2;    // role_type_name_xx.lsd
+    string schedule_id = 3;    // Schedule.pb
+    string u4 = 4;
+}
+
+message TrainerExRoleTable {
+    repeated TrainerExRole entries = 1;
+}

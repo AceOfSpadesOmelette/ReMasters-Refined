@@ -1,0 +1,13 @@
+﻿syntax = "proto3";
+package ReMastersLib;
+
+message BattleRallyChallengeStartItem {
+  int64 battle_rally_challenge_start_item_id = 1;
+  uint64 item_id = 2;
+  int64 u1 = 3;   // BattleRallyId ?
+  int64 u2 = 4;   // BattleRallyId ?
+}
+
+message BattleRallyChallengeStartItemTable {
+  repeated BattleRallyChallengeStartItem entries = 1;
+}

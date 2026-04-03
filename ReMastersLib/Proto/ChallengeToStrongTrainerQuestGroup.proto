@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package ReMastersLib;
+
+message ChallengeToStrongTrainerQuestGroup {
+	int64 quest_group_id = 1;
+	string u2 = 2;
+	int32 banner_id = 3;		// Banner.pb
+	int32 u4 = 4;
+	int32 u5 = 5;
+	string schedule_id = 6;		// Schedule.pb
+	string u7 = 7;
+	string u8 = 8;
+	int32 u9 = 9;
+	string u10 = 10;
+	int32 u11 = 11;
+}
+
+message ChallengeToStrongTrainerQuestGroupTable {
+	repeated ChallengeToStrongTrainerQuestGroup entries = 1;
+}

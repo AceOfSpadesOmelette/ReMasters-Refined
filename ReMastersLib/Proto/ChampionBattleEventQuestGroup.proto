@@ -1,0 +1,14 @@
+﻿syntax = "proto3";
+
+package ReMastersLib;
+
+message ChampionBattleEventQuestGroup {
+  uint32 questGroupId = 1;
+  uint32 championBattleEventId = 2;    // ChampionBattleEvent.pb
+  uint32 recommendedLevel = 3;
+  uint32 pointsPerArea = 4;
+}
+
+message ChampionBattleEventQuestGroupTable {
+  repeated ChampionBattleEventQuestGroup entries = 1;
+}

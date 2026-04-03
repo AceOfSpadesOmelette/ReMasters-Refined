@@ -1,0 +1,14 @@
+﻿syntax = "proto3";
+package ReMastersLib;
+
+message BattleRallyQuest {
+  uint64 story_quest_id = 1;  // StoryQuest.pb
+  repeated int64 possible_floors = 2;
+  int64 u1 = 3;
+  int64 u2 = 4;
+  int64 u3 = 5;
+}
+
+message BattleRallyQuestTable {
+  repeated BattleRallyQuest entries = 1;
+}

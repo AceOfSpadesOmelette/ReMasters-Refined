@@ -1,0 +1,16 @@
+﻿syntax = "proto3";
+
+package ReMastersLib;
+
+message ChampionBattleAccumulatedPointReward {
+  uint32 id = 1;
+  uint32 questGroupId = 2;    // ChampionBattleQuestGroup.pb
+  uint32 pointsAccumulated = 3;
+  uint64 itemId = 4;
+  uint32 quantity = 5;
+  string scheduleId = 6;
+}
+
+message ChampionBattleAccumulatedPointRewardTable {
+  repeated ChampionBattleAccumulatedPointReward entries = 1;
+}

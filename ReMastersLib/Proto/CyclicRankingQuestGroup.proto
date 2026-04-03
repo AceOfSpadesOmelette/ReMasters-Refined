@@ -1,0 +1,14 @@
+﻿syntax = "proto3";
+
+package ReMastersLib;
+
+message CyclicRankingQuestGroup {
+  int64 quest_group_id = 1;
+  int64 story_quest_id = 2; // StoryQuest.pb
+  int32 cyclic_ranking_quest_num = 3;
+  int32 banner_id = 4;  // Banner.pb
+}
+
+message CyclicRankingQuestGroupTable {
+  repeated CyclicRankingQuestGroup entries = 1;
+}

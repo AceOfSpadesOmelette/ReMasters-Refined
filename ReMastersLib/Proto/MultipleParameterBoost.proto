@@ -1,0 +1,16 @@
+﻿syntax = "proto3";
+package ReMastersLib;
+
+message MultipleParameterBoost {
+  uint64 multiple_parameter_boost_id = 1;
+  int64 hp_boost_ratio = 2;
+  int64 atk_boost_ratio = 3;
+  int64 def_boost_ratio = 4;
+  int64 spa_boost_ratio = 5;
+  int64 spd_boost_ratio = 6;
+  int64 spe_boost_ratio = 7;
+}
+
+message MultipleParameterBoostTable {
+  repeated MultipleParameterBoost entries = 1;
+}

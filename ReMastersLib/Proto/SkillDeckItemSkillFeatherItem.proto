@@ -1,0 +1,20 @@
+﻿syntax = "proto3";
+
+package ReMastersLib;
+
+message SkillDeckItemSkillFeatherItem {
+  int64 item_id = 1;  // item.pb
+  int32 stats_num_lot = 2;  // SkillDeckItemNumLot.pb
+  int32 stats_param_lot = 3;  // SkillDeckItemParamLot.pb
+  int32 team_skill_tag_num_lot = 4;  // SkillDeckItemNumLot.pb
+  int64 team_skill_tag_lot_set_id = 5; // SkillDeckItemConditionTeamSkillTagLot.pb
+  int32 skill_num_lot = 6;  // SkillDeckItemNumLot.pb
+  int64 skill_set_id = 7; // SkillDeckItemEffectLot.pb
+  int64 skill_feather_item_description = 8; // skill_deck_item_skill_feather_item_description_xx.lsd
+  string img_name = 9;
+  int32 rarity = 10;
+}
+
+message SkillDeckItemSkillFeatherItemTable {
+  repeated SkillDeckItemSkillFeatherItem entries = 1;
+}

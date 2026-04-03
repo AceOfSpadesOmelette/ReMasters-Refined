@@ -1,0 +1,14 @@
+﻿syntax = "proto3";
+package ReMastersLib;
+
+message BattleRallyTicketItem {
+  uint64 item_id = 1; // Item.pb
+  uint64 name = 2;  // other_item_name_xx.lsd
+  uint64 descr = 3; // other_item_description_xx.lsd
+  string image_name = 4;
+  string schedule_id = 5; // Schedule.pb
+}
+
+message BattleRallyTicketItemTable {
+  repeated BattleRallyTicketItem entries = 1;
+}

@@ -1,0 +1,22 @@
+﻿syntax = "proto3";
+
+package ReMastersLib;
+
+message ProgressEventRewardGroup {
+  int64 progress_event_id = 1;		// ProgressEvent.pb
+  int32 reward_step = 2;
+  ProgressEventRepeatType repeated_step = 3;
+  int64 step = 4;
+  int64 item_set_id = 5;  // ItemSet.pb
+  bool u1 = 6;
+}
+
+enum ProgressEventRepeatType {
+  none = 0;
+  false = 1;
+  true = 2;
+}
+
+message ProgressEventRewardGroupTable {
+  repeated ProgressEventRewardGroup entries = 1;
+}

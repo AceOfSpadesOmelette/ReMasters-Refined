@@ -1,0 +1,16 @@
+﻿syntax = "proto3";
+
+package ReMastersLib;
+
+message SpecialAwakingEffect {
+  int32 special_awaking_effect_id = 1;
+  int32 special_awaking_level = 2;
+  int32 role_id = 3;
+  int32 special_awaking_level_effect = 4; // special_awaking_level_effect_description_xx.lsd
+  int32 arg1 = 5; // stat (7 = all) or multiplier
+  int32 arg2 = 6; // none or multiplier
+}
+
+message SpecialAwakingEffectTable {
+  repeated SpecialAwakingEffect entries = 1;
+}

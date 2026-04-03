@@ -1,0 +1,17 @@
+﻿syntax = "proto3";
+
+package ReMastersLib;
+
+message ExRoleStatusUp {
+  uint32 roleId = 1;    // role_type_name_xx.lsd (0: Physical Strike)
+  uint32 hp = 2;
+  uint32 atk = 3;
+  uint32 spa = 4;
+  uint32 def = 5;
+  uint32 spd = 6;
+  uint32 spe = 7;
+}
+
+message ExRoleStatusUpTable {
+  repeated ExRoleStatusUp entries = 1;
+}

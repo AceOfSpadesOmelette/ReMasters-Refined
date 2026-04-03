@@ -1,0 +1,16 @@
+﻿syntax = "proto3";
+
+package ReMastersLib;
+
+message ChampionBattleQuest {
+  uint32 questGroupId = 1;
+  uint32 week = 2;
+  uint32 number = 3;
+  uint64 battleId = 4;
+  int64 fourKindsRuleId = 5; // ChampionBattleFourKindsRule.json
+  uint32 u6 = 6;             // ?
+}
+
+message ChampionBattleQuestTable {
+  repeated ChampionBattleQuest entries = 1;
+}

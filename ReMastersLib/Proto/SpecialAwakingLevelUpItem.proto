@@ -1,0 +1,15 @@
+﻿syntax = "proto3";
+
+package ReMastersLib;
+
+message SpecialAwakingLevelUpItem {
+  int64 item_id = 1;
+  string img_name = 2;
+  int32 u3 = 3;
+  int32 type = 4;   // 1 = generic, 2 = custom
+  int64 trainer_id = 5;
+}
+
+message SpecialAwakingLevelUpItemTable {
+  repeated SpecialAwakingLevelUpItem entries = 1;
+}

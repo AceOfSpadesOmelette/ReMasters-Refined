@@ -1,0 +1,20 @@
+﻿syntax = "proto3";
+
+package ReMastersLib;
+
+message HomeEventAppeal {
+  int64 homeEventAppealId = 1;
+  string eventAppealTitle = 2;    // event_appeal_title_xx.json
+  string eventAppealContentsUpper = 3;  // event_appeal_contents_upper_xx.json
+  string eventAppealContentsLower = 4;  // event_appeal_contents_upper_xx.json
+  uint32 bannerId = 5;  // Banner.pb
+  string u1 = 6;
+  int32 u2 = 7;
+  int64 u3 = 8;
+  string bannerScheduleId = 9;  // Schedule.pb
+  string popupScheduleId = 10;  // Schedule.pb
+}
+
+message HomeEventAppealTable {
+  repeated HomeEventAppeal entries = 1;
+}

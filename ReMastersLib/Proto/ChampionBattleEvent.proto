@@ -1,0 +1,15 @@
+﻿syntax = "proto3";
+
+package ReMastersLib;
+
+message ChampionBattleEvent {
+  uint32 championBattleEventId = 1;
+  string region = 2;    // champion_battle_region_name_xx.lsd
+  uint32 bannerId = 3;    // Banner.pb
+  uint32 u4 = 4;
+  string bgm_name = 5;
+}
+
+message ChampionBattleEventTable {
+  repeated ChampionBattleEvent entries = 1;
+}

@@ -1,0 +1,21 @@
+﻿syntax = "proto3";
+
+package ReMastersLib;
+
+message ChampionBattleQuestGroup {
+  uint32 questGroupId = 1;
+  uint32 championBattleRegionId = 2;    // ChampionBattleRegion.pb
+  uint32 u3 = 3;                        // ?
+  string questGroupName = 4;
+  uint32 recommendedLevel = 5;
+  uint32 u6 = 6;                        // ?
+  uint32 u7 = 7;                        // ?
+  string u8 = 8;                        // ?
+  string u9 = 9;                        // ?
+  uint64 emblemItemId = 10;             // EmblemItem.pb
+  uint32 pointsPerArea = 11;
+}
+
+message ChampionBattleQuestGroupTable {
+  repeated ChampionBattleQuestGroup entries = 1;
+}

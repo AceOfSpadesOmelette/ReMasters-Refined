@@ -1,0 +1,16 @@
+﻿syntax = "proto3";
+package ReMastersLib;
+
+message BattleRallyRoleBonusSet {
+  uint32 id = 1;
+  uint32 set_id = 2;
+  uint32 floor = 3;
+  uint32 role_a = 4;  // role_type_name_xx.lsd
+  uint32 role_b = 5;  // role_type_name_xx.lsd
+  uint32 u1 = 6;
+  uint32 u2 = 7;
+}
+
+message BattleRallyRoleBonusSetTable {
+  repeated BattleRallyRoleBonusSet entries = 1;
+}

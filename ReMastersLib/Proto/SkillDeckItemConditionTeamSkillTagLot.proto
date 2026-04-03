@@ -1,0 +1,15 @@
+﻿syntax = "proto3";
+
+package ReMastersLib;
+
+message SkillDeckItemConditionTeamSkillTagLot {
+  int64 set_id = 1;
+  int32 team_skill_tag_id = 2;    // TeamSkillTag.pb
+  string u2 = 3;
+  string u3 = 4;
+  string schedule_id = 5;    // Schedule.pb
+}
+
+message SkillDeckItemConditionTeamSkillTagLotTable {
+  repeated SkillDeckItemConditionTeamSkillTagLot entries = 1;
+}

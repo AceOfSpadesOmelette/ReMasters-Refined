@@ -1,0 +1,14 @@
+﻿syntax = "proto3";
+package ReMastersLib;
+
+message BattleRallyConfig {
+  uint64 config_id = 1;  // StoryQuest.pb
+  string config_name = 2;
+  int64 value = 3;
+  int64 u1 = 4;
+  int64 u2 = 5;
+}
+
+message BattleRallyConfigTable {
+  repeated BattleRallyConfig entries = 1;
+}

@@ -1,0 +1,13 @@
+﻿syntax = "proto3";
+
+package ReMastersLib;
+
+message ChampionBattleRegionOpeningSchedule {
+  uint32 championBattleRegionOpeningId = 1;
+  uint32 championBattleRegionId = 2;    // ChampionBattleRegion.pb
+  string scheduleId = 3;                // Schedule.pb
+}
+
+message ChampionBattleRegionOpeningScheduleTable {
+  repeated ChampionBattleRegionOpeningSchedule entries = 1;
+}

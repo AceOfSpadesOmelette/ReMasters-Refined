@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package ReMastersLib;
+
+message MoveLevelUpItem {
+	int64 item_id = 1;		// Item.pb
+	string image_id = 2;	// ui/image/Item
+	int32 stars = 3;
+	int32 frame = 4;
+	int32 param_type = 5;	// 1: Non-Egg, 2: Role Specific, 3: Egg, 4: Trainer
+	int64 param = 6;	// 1: -1, 2: role_id, 3: -1, 4: trainer_id
+}
+
+message MoveLevelUpItemTable {
+	repeated MoveLevelUpItem entries = 1;
+}

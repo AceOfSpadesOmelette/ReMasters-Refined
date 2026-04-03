@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package ReMastersLib;
+
+message FieldTalkVoice {
+    string field_talk_voice_id = 1;
+    string u2 = 2;
+    string u3 = 3;
+    bool u4 = 4;
+}
+
+message FieldTalkVoiceTable {
+    repeated FieldTalkVoice entries = 1;
+}

@@ -1,0 +1,12 @@
+﻿syntax = "proto3";
+package ReMastersLib;
+
+message ActorDress {
+  uint64 id = 1;
+  string actor_base = 2;
+  string actor_dress = 3;
+}
+
+message ActorDressTable {
+  repeated ActorDress entries = 1;
+}

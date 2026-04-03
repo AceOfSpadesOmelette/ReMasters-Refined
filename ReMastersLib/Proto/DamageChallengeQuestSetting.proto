@@ -1,0 +1,20 @@
+﻿syntax = "proto3";
+
+package ReMastersLib;
+
+message DamageChallengeQuestSetting {
+  int64 story_quest_id = 1; // StoryQuest.pb
+  DamageChallengeThemeRule damage_challenge_rule = 2;  // champion_battle_theme_xx.lsd / champion_battle_rule_xx.lsd
+  int64 trainer_base_id = 3;  // TrainerBase.pb
+  int32 cyclic_ranking_quest_num = 4; // CyclicRankingQuestGroup.pb
+}
+
+enum DamageChallengeThemeRule {
+  none = 0;
+  _6060_001 = 60600001;
+  _6060_002 = 60600002;
+}
+
+message DamageChallengeQuestSettingTable {
+  repeated DamageChallengeQuestSetting entries = 1;
+}

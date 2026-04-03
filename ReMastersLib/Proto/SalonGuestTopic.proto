@@ -1,0 +1,13 @@
+﻿syntax = "proto3";
+
+package ReMastersLib;
+
+message SalonGuestTopic {
+  uint32 salonGuestId = 1;      // SalonGuest.pb
+  uint64 topicId = 2;       // salon_topic_xx.lsd
+  int32 appreciation = 3;       // 1 = best; 2 = middle; 3 = low
+}
+
+message SalonGuestTopicTable {
+  repeated SalonGuestTopic entries = 1;
+}

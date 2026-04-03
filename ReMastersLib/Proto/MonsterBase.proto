@@ -1,0 +1,31 @@
+syntax = "proto3";
+
+package ReMastersLib;
+
+message MonsterBase {
+	int32 monster_base_id = 1;
+	string actor_id = 2;
+	int32 actor_number = 3;		// not actual dex numbers for Gen 6/7
+	int32 actor_variant = 4;
+	int32 u5 = 5;
+	string jp_name = 6;
+	int32 u7 = 7;
+	int32 gender = 8;
+	int32 u9 = 9;
+	int32 strength = 10;
+	int32 u11 = 11;
+
+	// If this passive is set, the game displays it above the others
+	int32 form_passive_id = 12;	// passive_skill_name_xx.lsd
+
+	int32 u13 = 13;
+	int32 u14 = 14;
+	int32 form_id = 15;			// monster_form_xx.json
+	int32 monster_name_id = 16;	// monster_name_xx.json
+
+	bool is_shiny = 17;
+}
+
+message MonsterBaseTable {
+    repeated MonsterBase entries = 1;
+}

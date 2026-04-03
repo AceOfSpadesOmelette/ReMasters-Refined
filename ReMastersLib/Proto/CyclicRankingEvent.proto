@@ -1,0 +1,17 @@
+﻿syntax = "proto3";
+
+package ReMastersLib;
+
+message CyclicRankingEvent {
+  int64 damage_challenge_battle_id = 1; // DamageChallengeBattle.pb
+  int64 event_name = 2;  // event_name_xx.lsd
+  int64 quest_group_id = 3;  // EventQuestGroup.pb
+  int32 u1 = 4;
+  int64 u2 = 5;
+  int64 u3 = 6;
+  repeated int64 seconds_before_cycling = 7;
+}
+
+message CyclicRankingEventTable {
+  repeated CyclicRankingEvent entries = 1;
+}

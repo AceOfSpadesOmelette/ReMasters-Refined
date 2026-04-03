@@ -1,0 +1,34 @@
+﻿syntax = "proto3";
+
+package ReMastersLib;
+
+message SkillDeckItemParamLot {
+  int32 skill_deck_item_num_lot = 1;  // SkillDeckItemNumLot.pb
+  EquipmentType equipment_type = 2;
+  ItemStat stat = 3;
+  int32 entry_weight = 4;
+  int32 min_stat = 5;
+  int32 max_stat = 6;
+  bool is_priority = 7;
+}
+
+enum ItemStat {
+  None = 0;
+  hp = 1;
+  atk = 2;
+  def = 3;
+  spa = 4;
+  spd = 5;
+  spe = 6;
+}
+
+enum EquipmentType {
+  Other = 0;
+  Bracelet= 1;
+  Bandana = 2;
+  Pin = 3;
+}
+
+message SkillDeckItemParamLotTable {
+  repeated SkillDeckItemParamLot entries = 1;
+}

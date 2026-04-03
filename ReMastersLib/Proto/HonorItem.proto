@@ -1,0 +1,31 @@
+﻿syntax = "proto3";
+
+package ReMastersLib;
+
+message HonorItem {
+  int64 item_id = 1;		// Item.pb
+  int32 u2 = 2;
+  int64 honor_item_id = 3;
+  int32 u4 = 4;
+  int64 trainer_id = 5;	// Trainer.pb
+  string background_path = 6;
+  string schedule_id = 7;	// Schedule.pb
+  int32 u8 = 8;
+  int32 u9 = 9;
+  string item_path = 10; // If no trainer, use this
+  int32 u11 = 11;
+  int32 u12 = 12;
+  int32 u13 = 13;
+  string frame_path = 14;
+  int32 u15 = 15;
+  string text = 16; // honor_text_xx.lsd
+  repeated int32 u17 = 17;
+  repeated int32 u18 = 18;
+  int32 u22 = 22;
+  int32 u23 = 23;
+  int32 mission_id = 24;  // Mission.pb
+}
+
+message HonorItemTable {
+  repeated HonorItem entries = 1;
+}

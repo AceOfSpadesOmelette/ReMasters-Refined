@@ -1,0 +1,23 @@
+﻿syntax = "proto3";
+
+package ReMastersLib;
+
+message ScoutSpecificTrainerBonus {
+  uint64 scoutBonusId = 1;
+  string scheduleId = 2;       // Schedule.pb
+  int64 trainerId = 3;    // Trainer.pb
+  int64 showcaseItemId = 4;    // Item.pb
+  int32 u5 = 5;
+  uint64 firstRewardItemSet = 6;   // ItemSet.pb
+  uint64 secondRewardItemSet = 7;   // ItemSet.pb
+  uint64 thirdRewardItemSet = 8;   // ItemSet.pb
+  uint64 fourthRewardItemSet = 9;   // ItemSet.pb
+  uint64 fifthRewardItemSet = 10;   // ItemSet.pb
+  uint64 sixthRewardItemSet = 11;   // ItemSet.pb
+                                    // 18446744073709551615 = null
+  int32 u12 = 12;
+}
+
+message ScoutSpecificTrainerBonusTable {
+  repeated ScoutSpecificTrainerBonus entries = 1;
+}

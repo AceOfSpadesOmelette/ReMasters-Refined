@@ -1,0 +1,13 @@
+﻿syntax = "proto3";
+
+package ReMastersLib;
+
+message TrainerSpecialAwaking {
+  uint64 trainer_id = 1;          // Trainer.pb
+  string schedule_id = 2;         // Schedule.pb
+  int32 passive_skill_id = 3;  // PassiveSkillChild.pb
+}
+
+message TrainerSpecialAwakingTable {
+  repeated TrainerSpecialAwaking entries = 1;
+}

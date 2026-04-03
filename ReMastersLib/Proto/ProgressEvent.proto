@@ -1,0 +1,15 @@
+﻿syntax = "proto3";
+
+package ReMastersLib;
+
+message ProgressEvent {
+  int64 progress_event_id = 1;
+  int64 event_name = 2;  // event_name_xx.lsd
+  int64 quest_group_id = 3;  // EventQuestGroup.pb
+  int32 u1 = 4;
+  int64 event_item_name = 5;  // event_item_name.lsd
+}
+
+message ProgressEventTable {
+  repeated ProgressEvent entries = 1;
+}

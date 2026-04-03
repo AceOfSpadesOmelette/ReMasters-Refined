@@ -1,0 +1,12 @@
+﻿syntax = "proto3";
+
+package ReMastersLib;
+
+message PassiveSkillChild {
+  int32 passive_skill_id = 1;
+  repeated uint64 passive_skill_child_ids = 2;
+}
+
+message PassiveSkillChildTable {
+  repeated PassiveSkillChild entries = 1;
+}

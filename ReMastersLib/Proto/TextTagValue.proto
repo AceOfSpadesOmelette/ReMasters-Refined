@@ -1,0 +1,18 @@
+﻿syntax = "proto3";
+package ReMastersLib;
+
+message TextTagValue {
+  uint64 text_tag_value_id = 1; // Item.pb
+  int64 idx = 2;   // battle_rally_item_name_xx.lsd
+
+  // 1: Name:Type / motif_type_name_xx.lsd
+  // 2: Name:TeamSkillTag / team_skill_tag_xx.lsd
+  // 3: Name:FieldEffectType / abnormal_state_xx.lsd
+  // 4: Name:ItemDescription / BattleRallyItem.pb => battle_rally_item_description_xx.lsd
+  int64 effect_tag = 3;  
+  int64 value = 4;
+}
+
+message TextTagValueTable {
+  repeated TextTagValue entries = 1;
+}

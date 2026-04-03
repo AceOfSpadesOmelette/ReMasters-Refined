@@ -1,0 +1,58 @@
+syntax = "proto3";
+
+package ReMastersLib;
+
+message StoryQuest {
+	uint64 story_quest_id = 1;
+    string quest_name_id = 2;				// story_quest_name_xx.lsd
+    uint64 field_id = 3;
+    int64 required_condition_id = 4;
+	uint64 sort_by = 5;
+	uint64 area_spot_id = 6;
+	uint64 item_set_id = 7;					// ItemSet.pb (First-time rewards)
+	uint64 quest_group_id = 8;
+	int32 field_type = 9;					// 0: No battle, 1: Normal, 2: Co-op
+	string schedule_id = 10;				// Schedule.pb
+	int64 play_count_limit = 11;
+	bool chapter_open_animation = 12;
+	Difficulty difficulty = 13;
+	string week_schedule_keyword = 14;
+	bool debug = 15;
+	int64 debug_category = 16;
+	int32 reward_type = 17;
+	int64 showcased_item_id = 18;			// Item.pb
+	int64 chara_quest_list_item_id = 19;
+	bool is_evolution_quest = 20;
+	QuestType quest_type = 21;
+	bool is_search_quest = 22;
+	uint64 next_quest_id = 23;
+	uint64 u24 = 24;
+	uint64 u25 = 25;
+	int64 u26 = 26;
+	int64 u27 = 27;
+	int64 u28 = 28;
+	int64 u29 = 29;
+	int64 u30 = 30;
+	int64 egg_drop_id = 31;				// EggDrop.pb
+}
+
+enum Difficulty {
+    None = 0;
+	Normal = 1;
+	Hard = 2;
+	VeryHard = 3;
+	SuperHard = 4;
+	UltraHard = 5;
+}
+
+enum QuestType {
+    MainStory = 0;
+	TrainingArea = 1;
+	SyncPairStories = 2;
+	Events = 3;
+}
+
+
+message StoryQuestTable {
+    repeated StoryQuest entries = 1;
+}

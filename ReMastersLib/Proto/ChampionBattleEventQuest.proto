@@ -1,0 +1,14 @@
+﻿syntax = "proto3";
+
+package ReMastersLib;
+
+message ChampionBattleEventQuest {
+  uint32 questGroupId = 1;
+  uint32 number = 2;
+  uint64 battleId = 3;
+  int64 fourKindsRuleId = 4;             // ChampionBattleEventFourKindsRule.pb
+}
+
+message ChampionBattleEventQuestTable {
+  repeated ChampionBattleEventQuest entries = 1;
+}

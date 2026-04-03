@@ -1,0 +1,11 @@
+﻿syntax = "proto3";
+package ReMastersLib;
+
+message BattleRally {
+  int64 battle_rally_id = 1;
+  string schedule_id = 2; // Schedule.pb
+}
+
+message BattleRallyTable {
+  repeated BattleRally entries = 1;
+}

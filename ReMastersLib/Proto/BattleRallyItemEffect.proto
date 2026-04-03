@@ -1,0 +1,15 @@
+﻿syntax = "proto3";
+package ReMastersLib;
+
+message BattleRallyItemEffect {
+  uint64 battle_rally_item_effect_id = 1; // Item.pb
+  bool is_team_skill = 2;
+  uint64 team_skill_id = 3;   // TeamSkill.pb
+  int32 u1 = 4; // 0 = ??, 1 = multipleParameterBoost, 2 = ??
+  int32 u2 = 5; // Value
+
+}
+
+message BattleRallyItemEffectTable {
+  repeated BattleRallyItemEffect entries = 1;
+}

@@ -1,0 +1,23 @@
+﻿syntax = "proto3";
+package ReMastersLib;
+
+message BattleRallyItem {
+  uint64 item_id = 1; // Item.pb
+  int64 name = 2;   // battle_rally_item_name_xx.lsd
+  int64 descr = 3;   // battle_rally_item_descr_xx.lsd
+  int64 text_tag_value_id = 4;  // TextTagValue.pb
+  string image_name = 5;
+  
+  // 1: Permanent
+  // 2: Next battle only
+  int64 duration_type = 6;
+  uint64 battle_rally_item_effect_id = 7;  // BattleRallyItemEffect.pb
+  uint32 item_category = 8;
+  int64 u1 = 9;
+  int64 u2 = 10;
+  
+}
+
+message BattleRallyItemTable {
+  repeated BattleRallyItem entries = 1;
+}

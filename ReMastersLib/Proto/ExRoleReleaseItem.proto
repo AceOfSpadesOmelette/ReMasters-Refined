@@ -1,0 +1,14 @@
+﻿syntax = "proto3";
+
+package ReMastersLib;
+
+message ExRoleReleaseItem {
+  uint32 exRoleItemId = 1;    //exrole_release_item_name_xx.lsd
+  string imageName = 2;
+  int32 u3 = 3;
+  int32 u4 = 4;    // Role ?
+}
+
+message ExRoleReleaseItemTable {
+  repeated ExRoleReleaseItem entries = 1;
+}

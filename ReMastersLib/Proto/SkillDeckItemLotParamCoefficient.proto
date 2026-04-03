@@ -1,0 +1,22 @@
+﻿syntax = "proto3";
+
+package ReMastersLib;
+
+message SkillDeckItemLotParamCoefficient {
+  Stat stat = 1;  
+  int32 coefficient = 2;
+}
+
+enum Stat {
+  None = 0;
+  hp = 1;
+  atk = 2;
+  def = 3;
+  spa = 4;
+  spd = 5;
+  spe = 6;
+}
+
+message SkillDeckItemLotParamCoefficientTable {
+  repeated SkillDeckItemLotParamCoefficient entries = 1;
+}

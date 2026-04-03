@@ -1,0 +1,13 @@
+﻿syntax = "proto3";
+package ReMastersLib;
+
+message TrainerDress {
+  uint64 id = 1;
+  uint64 trainer_id = 2;  // Trainer.pb
+  uint64 actor_dress_id = 3;  // ActorDress.pb
+  int32 u1 = 4;
+}
+
+message TrainerDressTable {
+  repeated TrainerDress entries = 1;
+}

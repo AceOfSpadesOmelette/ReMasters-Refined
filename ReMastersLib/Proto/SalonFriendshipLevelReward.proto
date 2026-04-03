@@ -1,0 +1,14 @@
+﻿syntax = "proto3";
+
+package ReMastersLib;
+
+message SalonFriendshipLevelReward {
+  uint32 salonGuestId = 1;
+  uint32 level = 2;
+  uint64 itemSetId = 3;
+  int32 u4 = 4;
+}
+
+message SalonFriendshipLevelRewardTable {
+  repeated SalonFriendshipLevelReward entries = 1;
+}

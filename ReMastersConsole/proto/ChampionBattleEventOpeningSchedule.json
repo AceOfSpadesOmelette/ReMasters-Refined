@@ -1,0 +1,17 @@
+{"entries": [
+{ "championBattleEventOpeningId": 150300001, "championBattleEventId": 10000002, "scheduleId": "5030_2W_Event_ChampionBattle" },
+{ "championBattleEventOpeningId": 150500001, "championBattleEventId": 10000004, "scheduleId": "5050_5W_Event_ChampionBattle" },
+{ "championBattleEventOpeningId": 150800001, "championBattleEventId": 10000005, "scheduleId": "5080_1W_Event_ChampionBattle" },
+{ "championBattleEventOpeningId": 150800002, "championBattleEventId": 10000006, "scheduleId": "5080_3W_Event_ChampionBattle" },
+{ "championBattleEventOpeningId": 151100001, "championBattleEventId": 10000007, "scheduleId": "5110_3W_Event_ChampionBattle" },
+{ "championBattleEventOpeningId": 160200001, "championBattleEventId": 10000008, "scheduleId": "6020_1W_Event_ChampionBattle" },
+{ "championBattleEventOpeningId": 160300001, "championBattleEventId": 10000009, "scheduleId": "6030_2W_Event_ChampionBattle" },
+{ "championBattleEventOpeningId": 160400001, "championBattleEventId": 10000010, "scheduleId": "6040_4W_Event_ChampionBattle" },
+{ "championBattleEventOpeningId": 160500001, "championBattleEventId": 10000011, "scheduleId": "6050_1W_Event_ChampionBattle" },
+{ "championBattleEventOpeningId": 160800001, "championBattleEventId": 10000012, "scheduleId": "6080_4W_Event_ChampionBattle" },
+{ "championBattleEventOpeningId": 161100001, "championBattleEventId": 10000013, "scheduleId": "6110_4W_Event_ChampionBattle" },
+{ "championBattleEventOpeningId": 170400001, "championBattleEventId": 10000014, "scheduleId": "7040_1W_Event2" },
+{ "championBattleEventOpeningId": 170600001, "championBattleEventId": 10000015, "scheduleId": "7060_4W_Event_4" },
+{ "championBattleEventOpeningId": 170900001, "championBattleEventId": 10000016, "scheduleId": "7090_4W_Event_3" },
+{ "championBattleEventOpeningId": 171200001, "championBattleEventId": 10000017, "scheduleId": "7120_4W_Event_6" }
+]}
